@@ -12,7 +12,7 @@ import {
   } from '@material-ui/core';
 import validator from 'validator'
 
-const WEBSERVICE_URL = 'http://localhost:8082/';
+  const WEBSERVICE_URL = `http://localhost:${process.env.REACT_APP_PORT}/`;
 
 const withCustomStyle = withStyles(() => ({
     cardStyle: {
