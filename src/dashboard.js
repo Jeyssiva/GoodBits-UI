@@ -59,7 +59,7 @@ const useStyles = makeStyles({
     }
 });
 
-const WEBSERVICE_URL = 'http://localhost:8082/';
+  const WEBSERVICE_URL = `http://localhost:${process.env.REACT_APP_PORT}/`;
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
