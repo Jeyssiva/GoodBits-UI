@@ -11,8 +11,7 @@ import {
     Button
   } from '@material-ui/core';
 // import { userActions } from '../_actions';
-const WEBSERVICE_URL = 'http://localhost:8082/';
-
+const WEBSERVICE_URL = `http://localhost:${process.env.REACT_APP_PORT}/`;
 const withCustomStyle = withStyles(() => ({
     cardStyle: {
         backgroundColor: 'rgb(28,43,54,0.5 )',
